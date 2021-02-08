@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body {
+  display: grid;
+  height: 100vh;
+  place-items: center
+}
+
+.body {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ width: 312px;
+ height: 312px;
+ outline: 2px solid red;
+}
+
+.head {
+  width: 80%;
+  height: 80%;
+  border-radius: 0 0 50% 50%;
+  background: #eee;
+  position: relative;
+}
+
+.hairs {
+  position: absolute;
+  top: -10%;
+  width: 100%;
+  height: 50%;
+  background: #000;
+  border-top-left-radius: 5em;
+  position: relative;
+}
+
+.hairs::before {
+  content: '';
+  position: absolute;
+  
+}
